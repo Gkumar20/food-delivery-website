@@ -1,0 +1,234 @@
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* css variables  */
+:root{
+    --navbar-height: 60px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Naviation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgb(0 61 122 / 92%);
+}
+#navbar::before{
+    content: "";
+    /* background-color: black; */
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+/* Navigation Bar: Logo,Logo Image */
+#logo{
+    margin: 0px 10px;
+    height: 68px;
+}
+#logo img{
+    margin: 9px 4px;
+    height: 58px;
+    width: 82px;
+}
+/* Navigation Bar: :List Styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 22px;
+    margin: 2px 5px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 448px;
+    /* padding: 3px 200px; */
+    color: white ;
+    text-shadow:2px 2px black;
+    top: 0px;
+    right: 0px; */
+    /* margin: -65px; */
+}
+#home::before{
+   content: "";
+   position: absolute;
+   top: 0px;
+   left:0px;
+   height: 100%;
+   width: 100%;
+   background: url('../img/background/bg1.jpg') no-repeat center center/cover;
+   z-index: -1;
+   opacity: 0.95;
+}
+#home h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+#home p{
+    text-align: center;
+    margin: 0px 5px;
+    padding: 2px 5px;
+    text-shadow: 1px 1px #ff000096;
+    /* color: #ffffff; */
+    background: #0000004a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #0000004a;
+}
+#home #btn1{
+    margin-top: 30px;
+}
+/* services seection */
+#services{
+    margin: 20px;
+    display: flex;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+#services-container h1{
+    margin: 0px;
+    padding: 0px 5px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin:  16px 5px;
+    border-radius: 23px;
+    background: rgb(240, 228, 228);
+}
+#services .box img{
+    margin: auto;
+    height: 160px;
+    display: block;
+}
+#services .box p{
+    text-align: justify;
+}
+#services{}
+
+/* client section  */
+#client-section{
+    position: relative;
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url(../img/background/bg.jpg) no-repeat center center/cover;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients .clients-item{
+    padding: 50px;
+}
+#clients .clients-item img{
+    height: 100px;
+}
+/* contact serction   */
+#contact{
+    position: relative;
+    height: ;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url(../img/background/contact.jpg) no-repeat center center/cover;
+}
+#contact-box form{
+width: 50%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin:10px 0px;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px rgb(0, 0, 0);
+} 
+/* footer section  */
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius:15px;
+}
+
+/*utility classes*/
+.h-primary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 2.3rem;
+    padding: 13px 5px;
+    margin: 9px 10px;
+}
+.h-secondary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.5rem;
+    padding: 13px 5px;
+    margin: 9px 10px;
+}
+.btn{
+    margin: 5px 10px;
+    padding: 5px 14px;
+    font-size: 0.9rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background: rgb(178 102 209);
+    box-shadow: 1px 1px 1px 1px #00ff00a3;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
